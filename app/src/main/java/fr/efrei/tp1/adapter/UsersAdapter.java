@@ -15,10 +15,10 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import fr.efrei.tp1.R;
 import fr.efrei.tp1.UserDetailActivity;
-import fr.efrei.tp1.adapter.UsersAdapater.UserViewHolder;
+import fr.efrei.tp1.adapter.UsersAdapter.UserViewHolder;
 import fr.efrei.tp1.bo.User;
 
-public final class UsersAdapater
+public final class UsersAdapter
     extends Adapter<UserViewHolder>
 {
 
@@ -78,7 +78,7 @@ public final class UsersAdapater
 
   private final List<User> users;
 
-  public UsersAdapater(List<User> users)
+  public UsersAdapter(List<User> users)
   {
     this.users = users;
   }

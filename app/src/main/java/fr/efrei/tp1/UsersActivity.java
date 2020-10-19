@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
-import fr.efrei.tp1.adapter.UsersAdapater;
+import fr.efrei.tp1.adapter.UsersAdapter;
 import fr.efrei.tp1.bo.User;
 import fr.efrei.tp1.repository.UserRepository;
 
@@ -93,8 +93,8 @@ final public class UsersActivity
     final List<User> users = currentOrderState == OrderState.NotOrder ? UserRepository.getInstance().getUsers() : UserRepository.getInstance().sortUsersByName();
 
     //We create the adapter and we attach it to the RecyclerView
-    final UsersAdapater usersAdapater = new UsersAdapater(users);
-    recyclerView.setAdapter(usersAdapater);
+    final UsersAdapter usersAdapter = new UsersAdapter(users);
+    recyclerView.setAdapter(usersAdapter);
   }
 
   @Override

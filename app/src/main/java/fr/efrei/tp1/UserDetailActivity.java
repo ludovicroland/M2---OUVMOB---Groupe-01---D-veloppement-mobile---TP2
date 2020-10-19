@@ -48,8 +48,7 @@ public class UserDetailActivity
     about.setText(user.about);
 
     //Then we update the title into the actionBar
-    getSupportActionBar().setTitle("My Title");
-    getSupportActionBar().setSubtitle("My subtitle");
+    getSupportActionBar().setTitle(user.name);
   }
 
 }

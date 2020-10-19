@@ -57,6 +57,10 @@
     tools:text="@tools:sample/cities"
     />
 
+  <!--
+    We use the maxLines attribut to be sure that this loooooong text stay on 1 line
+    We the the ellipsize in order to crop the text at the end with "..."
+  -->
   <TextView
     android:id="@+id/about"
     android:layout_width="0dp"
